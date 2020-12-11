@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 public abstract class BaseController <S extends BaseService,B>{
 
     @Autowired
-    S service;
+    protected S service;
 
     protected abstract Result add(@RequestBody B body, HttpServletRequest request) ;
 
